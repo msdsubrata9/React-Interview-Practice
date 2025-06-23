@@ -1,0 +1,97 @@
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel,
+.box {
+  height: 60vh;
+  width: 80vh;
+  min-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+
+.box {
+  margin-left: 40px;
+  margin-top: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.app img {
+  height: 100%;
+  width: 100%;
+  min-width: 200px;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.6s linear;
+}
+
+.box img[data-active="true"] {
+  opacity: 1;
+}
+
+.box img[data-active="false"] {
+  opacity: 0;
+}
+
+button {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  outline: none;
+  background-color: black;
+  color: white;
+}
+button:hover {
+  background-color: gray;
+}
+
+.next,
+.prev {
+  position: absolute;
+  z-index: 10;
+}
+
+.next {
+  top: 50%;
+  right: -70px;
+}
+.prev {
+  top: 50%;
+  left: 0;
+}
+
+.show {
+  animation: showAnimation 1s ease-in-out forwards;
+  z-index: 3;
+  opacity: 1 !important;
+}
+.hide {
+  animation: hideAnimation 1s ease-in-out forwards;
+  z-index: 2;
+  opacity: 0;
+}
+
+@keyframes showAnimation {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes hideAnimation {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
