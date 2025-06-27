@@ -1,0 +1,41 @@
+.suggestions {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 80px;
+  width: 100%;
+}
+
+.autoComplete {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+
+.inputContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.inputContainer input {
+  background-color: white;
+  width: 60vw;
+  height: 5vh;
+  padding: 10px;
+  color: black;
+  outline: none;
+  border-radius: 20px;
+}
+
+.suggestions button {
+  background-color: transparent;
+}
+
+.suggestions button:hover {
+  background-color: lightsalmon;
+}
+
+.suggestions button[data-selected="true"] {
+  background-color: red;
+}
