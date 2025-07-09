@@ -23,20 +23,26 @@ export default function TaskCard({ task }) {
   };
 
   return (
-    <div className="border p-3 mb-2 rounded shadow-sm bg-white">
-      <h3 className="font-bold text-lg">{task.title}</h3>
-      <p className="text-sm text-gray-600">{task.description}</p>
-      <p className="text-sm mt-1 text-blue-600">{getTimeStatus()}</p>
+    <div className="border p-3 mb-3 rounded shadow-sm bg-gray-50 hover:bg-gray-100">
+      <h3 className="font-semibold text-lg text-gray-800">{task.title}</h3>
+      {task.description && (
+        <p className="text-sm text-gray-600">{task.description}</p>
+      )}
+      <p className="text-sm mt-1 font-mono text-blue-700">{getTimeStatus()}</p>
       <div className="mt-2 space-x-2">
         <button
           onClick={handleToggleComplete}
-          className="px-2 py-1 bg-green-500 text-white rounded"
+          className={`px-3 py-1 text-sm rounded shadow ${
+            task.completed
+              ? "bg-yellow-500 text-white"
+              : "bg-green-600 text-white"
+          }`}
         >
           {task.completed ? "Mark Incomplete" : "Mark Complete"}
         </button>
         <button
           onClick={handleDelete}
-          className="px-2 py-1 bg-red-500 text-white rounded"
+          className="px-3 py-1 text-sm bg-red-500 text-white rounded shadow"
         >
           Delete
         </button>

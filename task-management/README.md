@@ -1,12 +1,72 @@
-# React + Vite
+# 📝 Task Manager App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive and dynamic Task Manager built with **React + Redux Toolkit**, focused on intuitive UX, real-time feedback, and smart deadline handling.
 
-Currently, two official plugins are available:
+![badge](https://img.shields.io/badge/Built%20With-React%20%2B%20Redux-blue)
+![badge](https://img.shields.io/badge/Status-Completed-success)
+![badge](https://img.shields.io/badge/Responsive-Mobile%20%26%20Desktop-lightgrey)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🔥 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### ✅ Dynamic & Intuitive UI
+
+- Clean, minimal design using **Tailwind CSS**
+- Mobile-first responsive layout
+- Full-page modal for task creation
+- Task list automatically updates in real time without page reload
+
+### 📂 Smart Task Bucketing
+
+Tasks are automatically categorized into:
+
+- 🟡 **Ongoing** – Active tasks with future deadlines
+- ✅ **Success** – Manually marked completed tasks
+- ❌ **Failure** – Missed deadline, not completed
+
+### 🕒 Real-Time Deadline Awareness
+
+- Countdown indicator: `Due in X hrs` or `Overdue by Y hrs`
+- Automatically moves tasks between buckets as time progresses
+
+### 🧠 Client-side Logic with Redux Toolkit
+
+- Task state managed globally with Redux
+- Manual `createSlice` actions (no thunk or extraReducer!)
+- Time-based status updates using `setInterval`
+
+### 🔄 Full CRUD Functionality
+
+- Add, edit, delete, and mark tasks as complete/incomplete
+- Fully asynchronous with clean API fetch handling
+- Loading/error state handling ready (optional)
+
+---
+
+## 🖼️ UI Preview
+
+| 📱 Mobile                                                          | 💻 Desktop                                                           |
+| ------------------------------------------------------------------ | -------------------------------------------------------------------- |
+| ![Mobile View](https://via.placeholder.com/200x400?text=Mobile+UI) | ![Desktop View](https://via.placeholder.com/400x200?text=Desktop+UI) |
+
+> _Placeholder screenshots above – you can add real images from your app UI._
+
+---
+
+## 🏗️ Tech Stack
+
+- **Frontend:** React, Redux Toolkit, Tailwind CSS
+- **State Management:** Redux (local state + global sync)
+- **UX Enhancements:** Full-page modal, transitions, real-time feedback
+
+---
+
+## 🚀 Getting Started
+
+1. Clone this repository:
+
+```bash
+git clone https://github.com/your-username/task-manager.git
+cd task-manager
+```
