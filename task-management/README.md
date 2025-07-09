@@ -44,16 +44,6 @@ Tasks are automatically categorized into:
 
 ---
 
-## 🖼️ UI Preview
-
-| 📱 Mobile                                                          | 💻 Desktop                                                           |
-| ------------------------------------------------------------------ | -------------------------------------------------------------------- |
-| ![Mobile View](https://via.placeholder.com/200x400?text=Mobile+UI) | ![Desktop View](https://via.placeholder.com/400x200?text=Desktop+UI) |
-
-> _Placeholder screenshots above – you can add real images from your app UI._
-
----
-
 ## 🏗️ Tech Stack
 
 - **Frontend:** React, Redux Toolkit, Tailwind CSS
@@ -67,6 +57,6 @@ Tasks are automatically categorized into:
 1. Clone this repository:
 
 ```bash
-git clone https://github.com/your-username/task-manager.git
+git clone https://github.com/msdsubrata9/React-Interview-Practice/tree/main/task-management
 cd task-manager
 ```
