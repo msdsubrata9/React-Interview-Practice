@@ -60,3 +60,9 @@ Tasks are automatically categorized into:
 git clone https://github.com/msdsubrata9/React-Interview-Practice/tree/main/task-management
 cd task-manager
 ```
+
+2. Deployed Application Link:
+
+```bash
+https://task-liard-seven.vercel.app/
+```
