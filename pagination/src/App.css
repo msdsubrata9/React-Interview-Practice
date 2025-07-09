@@ -1,0 +1,24 @@
+.productsContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.singleProductContainer {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid black;
+  width: 600px;
+}
+
+.pageContainer {
+  display: flex;
+  font-size: larger;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.active {
+  font-weight: bolder;
+  text-decoration: underline;
+}

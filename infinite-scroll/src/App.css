@@ -1,0 +1,17 @@
+.products__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product__single {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}

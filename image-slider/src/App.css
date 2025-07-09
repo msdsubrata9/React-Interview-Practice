@@ -1,0 +1,15 @@
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image {
+  width: 800px;
+}
+
+.leftArrow,
+.rightArrow {
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+}

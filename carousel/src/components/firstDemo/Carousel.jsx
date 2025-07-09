@@ -120,7 +120,11 @@ function Carousel({ children }) {
 
       <div className="stepper">
         {Array.from(children).map((_, index) => {
-          return <button onClick={handleStepperClick(index)}>{index}</button>;
+          return (
+            <button key={index} onClick={handleStepperClick(index)}>
+              {index}
+            </button>
+          );
         })}
       </div>
     </div>

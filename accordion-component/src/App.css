@@ -1,0 +1,22 @@
+.accordion__container {
+  width: 50%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.accordion {
+  border: 1px solid black;
+}
+
+.accordion_title {
+  font-weight: bold;
+  padding: 10px;
+  background-color: aqua;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.accordion_body {
+  padding: 10px;
+}

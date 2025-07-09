@@ -22,6 +22,20 @@ function AutoComplete({
   const [query, setQuery] = useState("");
   const [showList, setShowList] = useState(false);
 
+  /* 
+  Why useCallback() is required here:
+
+  1. The same debounced function is reused across re-renders
+
+  2. The internal timeoutId stays consistent
+
+  If we do not wrap the debounce function with useCallback()
+
+  then On every re-render, debounce(onChange, 200) creates a new debounced function.
+
+  So the timer (inside the debounce) resets every time the component renders.
+ 
+  */
   const debouncedFunction = useCallback(debounce(onChange, 200), []);
 
   function handleChangeQuery(value) {
