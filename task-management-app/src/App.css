@@ -1,0 +1,35 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+input {
+  width: 300px;
+  height: 40px;
+  margin: 10px;
+  font-size: xx-large;
+  padding: 10px;
+}
+
+.todo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.todo__text {
+  font-size: xx-large;
+  margin-right: 10px;
+}
+
+.filter__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.selected__filter {
+  font-size: xx-large;
+}
