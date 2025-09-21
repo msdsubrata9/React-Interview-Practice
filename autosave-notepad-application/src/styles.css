@@ -1,0 +1,38 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.notepad-container {
+  display: flex;
+}
+.sidebar {
+  width: 30%;
+  border-right: 2px solid black;
+  padding: 10px;
+}
+.notes-container {
+  flex: 1;
+}
+.notes-textarea {
+  rows: 30;
+  columns: 30;
+}
+
+.note-title-btn.active {
+  font-size: large;
+  background-color: lightblue;
+}
+
+.notes-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.note-title-btn {
+  margin: 10px;
+  background-color: transparent;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 20px;
+}
